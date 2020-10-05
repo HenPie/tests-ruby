@@ -6,7 +6,7 @@ def translate(text)
   words.each do |word|
   if vowels.include?(word.chars.first)
     array << word + "ay"
-  elsif word[0] != vowels && word[1,3] == "qu"
+  elsif word.chars.first != vowels && word[1,2] == "qu"
     array << word[3..-1] + word[0...3] + "ay"
   elsif word[0,2] == "qu"
     array << word[2..-1] + word[0...2] + "ay" 

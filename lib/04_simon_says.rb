@@ -21,7 +21,7 @@ end
 def titleize(string)
   capitalized = string.split.each do |i|
     if i.length >= 2
-      if i == "of" || i == "the" || i == "and"
+      if i == "of" || i == "and"
         next
       else
         i.capitalize!
